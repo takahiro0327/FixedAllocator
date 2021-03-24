@@ -12,8 +12,8 @@ private:
 
 public:
 
-    bool Initialize( void* pBuff, size_t buffSize, size_t blockSize ){
-        
+    bool Initialize( void* pBuff, size_t buffSize, size_t blockSize )
+	{        
         m_pHead = (uintptr_t)nullptr;
     
         if( pBuff == nullptr )
