@@ -28,7 +28,7 @@ public:
             return false;   //Block size is inappropriate. Does not have an alignment greater than a pointer.
     
         if( buffSize < blockSize )
-            return true;
+            return false;
         
         uintptr_t end = head + buffSize - blockSize;
         m_pHead = head;
