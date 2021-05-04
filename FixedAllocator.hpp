@@ -16,7 +16,7 @@ public:
 	{        
         m_pHead = (uintptr_t)nullptr;
     
-        if( pBuff == nullptr )
+        if( pBuff == nullptr || blockSize <= 0 )
             return false;
         
         uintptr_t head = (uintptr_t)pBuff;
